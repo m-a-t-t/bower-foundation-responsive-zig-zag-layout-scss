@@ -24,6 +24,7 @@
   "dependencies": {
     "foundation": "~4",
     "jquery": "~1.10.2",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "foundation-responsive-zig-zag-layout-scss": "~0.0.1"
   }
 }

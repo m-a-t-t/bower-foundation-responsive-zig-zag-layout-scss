@@ -1,0 +1,142 @@
+/*OVERLAPPING ITEMS*/
+
+$overlap-margin-top: 25px;
+$overlap-content-margin-top: 108px;
+$overlapped-padding-bottom: 70px;
+
+.overlapped-item {
+  padding-bottom: $overlapped-padding-bottom;
+}
+
+.overlap-item {
+  margin-top: -$overlap-margin-top;
+  .content-background {
+    margin-top: $overlap-margin-top;
+  }
+
+}
+
+.overlapped-items {
+  .content-w {
+    margin-top: -$overlap-margin-top;
+
+    .content-header {
+      margin-top: -$overlap-margin-top;
+    }
+    .content-background {
+      margin-top: $overlap-margin-top;
+      margin-bottom: -$overlapped-padding-bottom;
+      padding-bottom: $overlapped-padding-bottom;
+    }
+
+    &:nth-child(n+0) {
+      padding-bottom: $overlapped-padding-bottom;
+    }
+
+    &:last-child {
+      padding-bottom: inherit;
+    }
+
+  }
+}
+
+/* margin top on large and small devices*/
+@media only screen {
+  $overlap-content-margin-top: 30px;
+  .overlapped-items.zig-zag-titles {
+    .content-w, .content-w.no-zig-zag {
+      .content-body {
+        margin-top: $overlap-content-margin-top;
+      }
+    }
+  }
+  .zig-zag-titles .overlap-item, .zig-zag-titles .overlap-item.no-zig-zag {
+    margin-top: -$overlap-margin-top;
+    .content-body {
+      margin-top: $overlap-content-margin-top;
+    }
+  }
+}
+
+@media #{$small} {
+  $overlap-content-margin-top: 108px;
+  .zig-zag-titles.overlapped-items {
+    .content-w {
+      .content-body {
+        margin-top: $overlap-content-margin-top;
+      }
+    }
+  }
+  .zig-zag-titles .overlap-item {
+    margin-top: -$overlap-margin-top;
+    .content-body {
+      margin-top: $overlap-content-margin-top;
+    }
+  }
+}
+
+/* END margin top on large and small devices*/
+
+/*end OVERLAPPING ITEMS*/
+
+/*  zig zag columns */
+@media only screen {
+  //this is small screen
+  .content-w, .zig-zag-titles .content-w.no-zig-zag_disa {
+    .content-header {
+      @include grid-column($columns: 12, $collapse: null, $float: false);
+    }
+    .content-body {
+      @include grid-column($columns: 12, $collapse: null, $float: false);
+    }
+  }
+
+  .zig-zag-titles .content-w.no-zig-zag {
+    .content-header {
+      @include grid-column($columns: 12, $collapse: null, $float: false);
+    }
+    .content-body {
+      @include grid-column($columns: 12, $collapse: null, $float: false);
+    }
+  }
+  .content-w{
+    .content-header, .content-body{
+      @include grid-column($columns:false);
+    }
+  }
+}
+
+@media #{$small} {
+  //this is large screen
+  .zig-zag-titles {
+
+    .content-w {
+
+      &:nth-child(even), &.zig-zag-right {
+        .content-header {
+          @include grid-column($push: 8, $collapse: null, $float: false);
+        }
+        .content-body {
+          @include grid-column($pull: 4, $collapse: null, $float: false);
+        }
+      }
+
+      &:nth-child(even).no-zig-zag, &:nth-child(even).zig-zag-left {
+        .content-header {
+          @include grid-column($pull: 0, $collapse: null, $float: false);
+        }
+        .content-body {
+          @include grid-column($push: 0, $collapse: null, $float: false);
+        }
+      }
+
+      .content-header {
+        @include grid-column($columns: 4, $collapse: null, $float: false);
+      }
+      .content-body {
+        @include grid-column($columns: 8, $collapse: null, $float: false);
+      }
+    }
+
+  }
+}

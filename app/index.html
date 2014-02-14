@@ -1,0 +1,282 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>foundation zig zag content titles layout</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="main-w overlapped-item">
+
+
+            <h1>Look for "zig-zag-titles" in source to see how it works</h1>
+            <p>When you add "zig-zag-titles" class to parent element its "content-w" class children will push and pull "content-header" and "content-body" elements.
+                You can disable zig-zag on any "content-w" element by adding "no-zig-zag" class. Or you can force title to the left or right by adding "zig-zag-left" or "zig-zag-right" to "content-w" element.</p>
+            <h3>
+                Basic structure of elements:
+            </h3>
+            <xmp>
+                <div class="content-w">
+                        <section class="row content ">
+                            <header class="content-header">
+                                <i class="fa-magnet fa  fa-4x double-border icon-center"></i>
+                                <h1 class="content-title">Title 1</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                </div>
+            </xmp>
+            <p>There's also "overlapped-items" class added so icon overlaps previous element.</p>
+            </div>
+                                                        <hr/>
+            <article class="body-w overlapped-items zig-zag-titles">
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content">
+                            <header class="content-header">
+                                <i class="fa-magnet fa  fa-4x double-border icon-center"></i>
+                                <h1 class="content-title">Title 1</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class="content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">What is Cloud
+                                    Office Movement?</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">What is Cloud
+                                    Office Movement?</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <div class="content-w  no-zig-zag">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">"no-zig-zag" class added</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-w  zig-zag-left">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">"zig-zag-left" class added</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="content-w  zig-zag-left">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">"zig-zag-left" class added</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="content-w  zig-zag-right">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">"zig-zag-right" class added</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="content-w  zig-zag-right">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">"zig-zag-right" class added</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">What is Cloud
+                                    Office Movement?</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">What is Cloud
+                                    Office Movement?</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="content-w">
+                    <div class="content-background">
+                        <section class="row content ">
+                            <header class=" content-header">
+                                <i class="fa-cloud fa  fa-4x double-border icon-center"></i>
+
+                                <h1 class="content-title">What is Cloud
+                                    Office Movement?</h1>
+                            </header>
+                            <div class="content-body">
+                                <p>
+                                    And main text gows here...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+
+            </article>
+
+
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

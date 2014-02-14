@@ -1,0 +1,29 @@
+{
+  "name": "foundation-responsive-zig-zag-layout-scss",
+  "version": "0.0.1",
+  "authors": [
+    "m-a-t-t <matjazonline@gmail.com>"
+  ],
+  "description": "Content titles are positioned based on nth-child either on left or right side by adding one css class to parent element. It's also responsive so on small screens it gets rearanged to vertical.",
+  "keywords": [
+    "foundation",
+    "foundation framework",
+    "zig zag layout",
+    "responsive layout",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~4",
+    "jquery": "~1.10.2",
+    "font-awesome": "~4.0.3"
+  }
+}

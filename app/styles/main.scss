@@ -1,0 +1,84 @@
+@import "base";
+$accent-color-1:#ccc;
+$accent-color-1-darker:darken($accent-color-1,10%);
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+i{
+  color:$accent-color-1 ;
+}
+
+.icon-center{
+  margin: auto;
+}
+
+
+.#{$fa-css-prefix}-4x {
+  font-size: 4em;
+}
+.single-border.#{$fa-css-prefix}-4x {
+  padding: .4em;
+  border: solid 0.02em #000;
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+
+}
+
+.double-border.#{$fa-css-prefix}-4x {
+  padding: .4em;
+  border: solid 0.04em $accent-color-1;
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: relative;
+  background-color:$body-bg;
+}
+
+.double-border.#{$fa-css-prefix}-4x:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  border: solid 0.02em $accent-color-1-darker;
+  border-radius: 50%;
+}
+
+.content-w{
+  border-bottom: 1px #ccc solid;
+}

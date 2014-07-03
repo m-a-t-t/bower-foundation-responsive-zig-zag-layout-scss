@@ -1,7 +1,7 @@
 /*OVERLAPPING ITEMS*/
 
 $overlap-margin-top: 25px;
-$overlap-content-margin-top: 108px;
+$overlap-content-margin-top: 103px;
 $overlapped-padding-bottom: 70px;
 
 .overlapped-item {
@@ -18,6 +18,7 @@ $overlapped-padding-bottom: 70px;
 
 .overlapped-items {
   .content-w {
+    position: relative;
     margin-top: -$overlap-margin-top;
 
     .content-header {
@@ -59,7 +60,7 @@ $overlapped-padding-bottom: 70px;
 }
 
 @media #{$small} {
-  $overlap-content-margin-top: 108px;
+  $overlap-content-margin-top: 104px;
   .zig-zag-titles.overlapped-items {
     .content-w {
       .content-body {
@@ -82,7 +83,7 @@ $overlapped-padding-bottom: 70px;
 /*  zig zag columns */
 @media only screen {
   //this is small screen
-  .content-w, .zig-zag-titles .content-w.no-zig-zag_disa {
+  .content-w {
     .content-header {
       @include grid-column($columns: 12, $collapse: null, $float: false);
     }
@@ -105,6 +106,7 @@ $overlapped-padding-bottom: 70px;
     }
   }
 }
+
 
 @media #{$small} {
   //this is large screen

@@ -1,8 +1,8 @@
 /*OVERLAPPING ITEMS*/
 
-$overlap-margin-top: 25px;
-$overlap-content-margin-top: 103px;
-$overlapped-padding-bottom: 70px;
+$overlap-margin-top: 25px !default;
+$overlap-content-margin-top: 103px !default;
+$overlapped-padding-bottom: 120px !default;
 
 .overlapped-item {
   padding-bottom: $overlapped-padding-bottom;
@@ -34,10 +34,21 @@ $overlapped-padding-bottom: 70px;
       padding-bottom: $overlapped-padding-bottom;
     }
 
+    /* leave space at the bottom
     &:last-child {
       padding-bottom: inherit;
-    }
 
+      .content-background {
+        margin-bottom: inherit;
+        padding-bottom: inherit;
+      }
+
+    }*/
+
+  }
+  .no-overlap{
+    margin-top: 0px;
+    padding-top: $overlapped-padding-bottom - $overlap-margin-top;
   }
 }
 

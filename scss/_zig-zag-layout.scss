@@ -46,11 +46,22 @@ $overlapped-padding-bottom: 120px !default;
     }*/
 
   }
+
+
   .no-overlap{
     margin-top: 0px;
     padding-top: $overlapped-padding-bottom - $overlap-margin-top;
+    &.no-zig-zag{
+      padding-top: 0px;
+      .content-background {
+        margin-top: 0px;
+        margin-bottom: -$overlapped-padding-bottom;
+        padding-bottom: 0px;
+      }
+    }
   }
 }
+
 
 /* margin top on large and small devices*/
 @media only screen {
